@@ -1,13 +1,13 @@
 # iPhone-Modelagem-UML-
 Atividade Beck-and em Java - DIO e Santander.
 
-# 📱 iPhone — Modelagem UML & Implementação em Java
+# iPhone — Modelagem UML & Implementação em Java
 
 Este projeto é um desafio de **POO (Programação Orientada a Objetos)** que modela o **iPhone** com suas principais funcionalidades apresentadas no lançamento de 2007:
 
-- 🎵 **Reprodutor Musical**
-- 📞 **Aparelho Telefônico**
-- 🌐 **Navegador na Internet**
+**Reprodutor Musical** 🎶
+**Aparelho Telefônico** 📱
+**Navegador na Internet** 🧭
 
 ---
 
@@ -23,19 +23,19 @@ classDiagram
         <<interface>>
         +tocar() void
         +pausar() void
-        +selecionarMusica(musica : String) void
+        +selecionarMusica(String musica) void
     }
 
     class AparelhoTelefonico {
         <<interface>>
-        +ligar(numero : String) void
+        +ligar(String numero) void
         +atender() void
         +iniciarCorreioVoz() void
     }
 
     class NavegadorInternet {
         <<interface>>
-        +exibirPagina(url : String) void
+        +exibirPagina(String url) void
         +adicionarNovaAba() void
         +atualizarPagina() void
     }
@@ -47,11 +47,11 @@ classDiagram
         +iPhone()
         +tocar() void
         +pausar() void
-        +selecionarMusica(musica : String) void
-        +ligar(numero : String) void
+        +selecionarMusica(String musica) void
+        +ligar(String numero) void
         +atender() void
         +iniciarCorreioVoz() void
-        +exibirPagina(url : String) void
+        +exibirPagina(String url) void
         +adicionarNovaAba() void
         +atualizarPagina() void
     }
